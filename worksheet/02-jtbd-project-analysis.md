@@ -1,498 +1,229 @@
 ---
-artifact: 02 — JTBD Project Analysis
-bai-tap: Lab 2 — Dùng JTBD để soi lại dự án nhóm
-format: Theo nhóm dự án → share trong bàn → chốt hypothesis cuối
-time: 25 phút trên lớp
-nop-cuoi: Có — đây là file nộp cuối của Lab 2
-companion-reference: Strategyn_JTBD_Playbook.pdf (giảng viên gửi kèm)
+artifact: 02 - JTBD Project Analysis
+bai-tap: Lab 2 - Dùng JTBD để soi lại dự án nhóm
+ngày: 18/06/2026
+người-làm: Đỗ Thị Thanh Bình
+companion-reference: Strategyn_JTBD_Playbook.pdf
 ---
 
-# Lab 2 — JTBD Project Analysis / Dùng JTBD để soi lại dự án nhóm
+# Lab 2 — JTBD Project Analysis
 
-**Tên dự án / sản phẩm:** _______________  
-
-> Đây là **file duy nhất** của Lab 2.  
-> File này đồng thời đóng vai trò:
->
-> - guide từng bước,
-> - worksheet để điền trực tiếp,
-> - và file nộp cuối cho người chấm.
-
-Mục tiêu của bài này không phải brainstorm thêm thật nhiều tính năng AI.
-Mục tiêu là:
-
-1. **xác định người dùng thực sự đang cố hoàn thành job gì**
-2. **hiểu họ đang dùng giải pháp nào để hoàn thành job đó hôm nay**
-3. **chỉ ra AI nên chen vào đúng bước nào trong workflow**
-4. **viết ra product hypothesis và assumption còn phải validate**
-
-Quy tắc xuyên suốt: **không rõ job thì đừng bàn feature.**
+**Tên dự án / sản phẩm:** VinUni International Student Assistant — trợ lý hỗ trợ sinh viên quốc tế
 
 ---
 
-## Cần mở song song 2 thứ
+## 1. Project Slice
 
-1. **File này** — để điền trực tiếp
-2. **`Strategyn_JTBD_Playbook.pdf`** — giảng viên gửi kèm
+- **Dự án của nhóm tôi là:** VinUni International Student Assistant — trợ lý đa ngôn ngữ giúp sinh viên quốc tế tìm và hiểu thông tin chính thức của VinUniversity.
+- **Lát cắt tôi chọn để phân tích:** Sinh viên quốc tế mới nhập học cần hoàn tất đúng hạn các thủ tục bắt buộc liên quan đến visa và hồ sơ nhập học trước khi bắt đầu học kỳ.
+- **Vì sao tôi chọn lát cắt này:** Đây là một job có điểm bắt đầu, kết quả và hậu quả rõ ràng. Nếu tìm sai nguồn, hiểu sai yêu cầu hoặc bỏ lỡ deadline, sinh viên có thể chậm nhập học hay phải làm lại hồ sơ. Workflow cũng đủ cụ thể để map từ xác định thủ tục đến xác nhận đã hoàn tất.
 
-### Cách dùng playbook cho đúng
+**Checklist lát cắt:**
 
-Bạn **không cần đọc hết 48 trang**.  
-Trong bài này, playbook chủ yếu dùng để tra 4 thứ:
-
-1. **Cách nhìn thị trường qua JTBD lens**
-2. **`Job executor` là ai**
-3. **Cách viết `job statement`: `verb + object + contextual clarifier`**
-4. **8 bước của `job map`**:
-   `define -> locate -> prepare -> confirm -> execute -> monitor -> modify -> conclude`
-
-### 2 chương nên mở nhiều nhất
-
-- **Chapter 2 — Define Your Market**
-- **Chapter 3 — Build Your Job Map**
-
-> Dùng playbook để **tra framework và ví dụ**.  
-> Dùng file này để **làm bài và chốt output**.
+- [x] 1 nhóm người dùng chính
+- [x] 1 hoàn cảnh / tình huống rõ
+- [x] 1 job cốt lõi
+- [x] 1 workflow đủ cụ thể để vẽ ra được
 
 ---
 
-## Đầu ra bắt buộc
-
-Người chấm cần thấy đủ 6 phần trong chính file này:
-
-1. **`Project slice` + market context**
-2. **`Job executor` + `core JTBD`**
-3. **3 `job stories`**
-4. **`JTBD lite map` + pain points**
-5. **`AI leverage point` + `product hypothesis`**
-6. **`Assumptions to validate` + verdict cuối sau thảo luận**
-
-Nếu thiếu một trong sáu phần trên, bài sẽ bị xem là chưa hoàn chỉnh.
-
----
-
-## Cách làm trong lớp (25 phút)
-
-```text
-3'  Chốt 1 lát cắt cụ thể của dự án
-7'  Viết market context + job executor + core JTBD
-6'  Viết 3 job stories + current alternatives
-6'  Điền JTBD lite map + AI leverage point + hypothesis
-3'  Share trong bàn và sửa version cuối
-```
-
-> Nếu dự án làm theo nhóm, cả nhóm có thể thảo luận chung.  
-> Nhưng file này vẫn nên có **version chốt rõ ràng** của người nộp.
-
----
-
-## Bước 0 — Khoanh đúng 1 lát cắt của dự án
-
-Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó mọi thứ mơ hồ theo.
-
-### Khoanh đúng 1 lát cắt theo 4 điểm
-
-- [ ] **1 nhóm người dùng chính**
-- [ ] **1 hoàn cảnh / tình huống rõ**
-- [ ] **1 job cốt lõi**
-- [ ] **1 workflow đủ cụ thể để vẽ ra được**
-
-### Điền nhanh trước khi làm
-
-- **Dự án của nhóm tôi là:** ___________________________________
-- **Lát cắt tôi chọn để phân tích hôm nay là:** ___________________________________
-- **Vì sao tôi chọn lát cắt này:**  
-  > ___________________________________
-
-### Viết quá rộng vs viết sắc hơn
-
-| Viết quá rộng | Viết sắc hơn |
-|---|---|
-| Giúp SME dùng AI để marketing | Giúp chủ shop online phản hồi câu hỏi trước mua hàng nhanh và nhất quán trong giờ cao điểm |
-| Dùng AI để làm slide | Tạo bản nháp deck nội bộ mạch lạc cho buổi họp gấp trong thời gian rất ngắn |
-| AI cho tuyển dụng | Giúp recruiter sàng lọc CV đầu vào nhanh hơn trước vòng gọi sơ bộ |
-
-> Nếu bạn không mô tả được **một hoàn cảnh cụ thể**, khả năng cao bạn đang viết quá rộng.
-
----
-
-## Bước 1 — Viết `Project Snapshot`
-
-### Tóm tắt dự án trong 3 dòng
+## 2. Project Snapshot
 
 1. **Nhóm tôi đang nghĩ mình đang giải quyết vấn đề gì?**  
-   > ___________________________________
+   > Sinh viên quốc tế mới nhập học khó ghép các thông tin rải rác thành một kế hoạch hành động đáng tin: cần làm thủ tục nào, chuẩn bị giấy tờ gì, theo deadline nào và hỏi ai khi trường hợp của mình không khớp hướng dẫn chung.
 
 2. **Người dùng chính hiện nhóm đang nhắm tới là ai?**  
-   > ___________________________________
+   > Sinh viên quốc tế đã nhận thư mời nhập học và đang chuẩn bị bắt đầu học kỳ tại VinUniversity.
 
 3. **Hiện tại người dùng đó đang giải quyết vấn đề này bằng cách nào?**  
-   > ___________________________________
+   > Họ dò website và email nhập học, tự lập checklist, hỏi senior, gửi email cho phòng ban phụ trách, hoặc dùng công cụ dịch/AI tổng quát để hiểu nội dung khó.
 
 ---
 
-## Bước 2 — Viết `Market Context`
-
-Ở đây chưa cần solution. Chỉ cần bối cảnh thị trường đủ để hiểu:
-**ai đang gặp chuyện gì, trong hoàn cảnh nào, và vì sao bây giờ đáng giải.**
-
-### Trả lời 4 câu ngắn
+## 3. Market Context
 
 1. **Ai đang gặp vấn đề này?**  
-   > ___________________________________
+   > Sinh viên quốc tế đã được nhận vào VinUniversity nhưng chưa quen quy trình visa và hồ sơ nhập học tại Việt Nam.
 
 2. **Vấn đề xuất hiện trong hoàn cảnh nào?**  
-   > ___________________________________
+   > Trong giai đoạn từ khi nhận thư mời đến ngày bắt đầu học kỳ, khi họ phải phối hợp nhiều yêu cầu, giấy tờ, đầu mối và deadline.
 
 3. **Hiện tại họ đang dùng giải pháp thay thế nào?**  
-   > ___________________________________
+   > Website và email chính thức, checklist tự tạo, senior/bạn bè, công cụ dịch hoặc AI tổng quát, và email trực tiếp tới phòng ban.
 
 4. **Vì sao đây là thời điểm đáng giải?**  
-   > ___________________________________
+   > Đây là job có deadline và chi phí sai sót cao, trong khi khác biệt ngôn ngữ, múi giờ và bối cảnh hành chính làm tăng khả năng hiểu sai. Tuy nhiên, mức độ phổ biến và cường độ của pain vẫn cần được xác nhận bằng dữ liệu người dùng thật.
 
-### Tóm tắt market context trong 3-4 dòng
+**Tóm tắt market context:**
 
-> _______________________________________________  
-> _______________________________________________
-
----
-
-## Bước 3 — Xác định `Job Executor`
-
-`Job executor` là người **trực tiếp dùng một giải pháp để hoàn thành job**.
-
-### Đừng nhầm với:
-
-- người mua tiền nhưng không trực tiếp làm job
-- người ảnh hưởng quyết định
-- cả một công ty hay một phòng ban quá rộng
-
-### Gợi ý viết cho đúng
-
-- Sai hoặc quá rộng: `SME`, `doanh nghiệp`, `thị trường`
-- Tốt hơn: `chủ shop online`, `nhân viên CSKH`, `recruiter`, `sales ops manager`
-
-### Điền
-
-- **Job executor của dự án này là:** ___________________________________
-- **Vì sao tôi tin đây là người trực tiếp "thuê" giải pháp để làm job:**  
-  > ___________________________________
+> Trong giai đoạn trước nhập học, sinh viên quốc tế không chỉ cần “tìm thông tin”; họ cần biến nhiều nguồn hướng dẫn thành một chuỗi việc đúng với trường hợp của mình. Các kênh hiện tại có thể chứa câu trả lời đúng nhưng buộc sinh viên tự ghép nguồn, kiểm tra phiên bản và xác định đầu mối. Cơ hội sản phẩm nằm ở việc giảm sự bất định trước khi hành động, không phải thay thế quyết định chính thức của nhà trường.
 
 ---
 
-## Bước 4 — Viết `Core JTBD`
+## 4. Job Executor
 
-`Core JTBD` là công việc cốt lõi người dùng đang cố hoàn thành.
+- **Job executor của dự án này là:** Sinh viên quốc tế đã nhận thư mời nhập học tại VinUniversity.
+- **Vì sao đây là người trực tiếp “thuê” giải pháp để làm job:** Chính sinh viên phải hiểu yêu cầu, chuẩn bị và nộp hồ sơ, theo dõi deadline, rồi xử lý các thiếu sót. Nhà trường có thể là buyer hoặc đơn vị vận hành; staff và senior là influencer/supporter, nhưng không trực tiếp hoàn thành job thay sinh viên.
 
-### Công thức gợi ý
+---
 
-```text
-[verb] + [object] + [contextual clarifier]
-```
-
-### Ví dụ
-
-- Chưa tốt: `trả lời inbox bằng AI`
-- Tốt hơn: `giải quyết câu hỏi trước mua hàng nhanh và chính xác trong giờ cao điểm`
-
-- Chưa tốt: `dùng AI để viết nội dung`
-- Tốt hơn: `tạo bản nháp nội dung chiến dịch phù hợp với brand trong thời gian rất ngắn`
-
-### 3 tiêu chí tự kiểm
-
-- [ ] Nếu bỏ tool hiện tại đi, job này vẫn còn tồn tại
-- [ ] Trong câu không có tên sản phẩm, AI, chatbot, app, màn hình
-- [ ] Câu đang mô tả **điều user muốn hoàn thành**, không phải thứ product đang làm
-
-### Bản nháp 1
+## 5. Core JTBD
 
 **Core JTBD bản nháp:**  
-> _______________________________________________
+> Tìm và hiểu thông tin cần thiết để xử lý thủ tục nhập học.
 
-### Gạch bỏ từ solution nếu có
-
-- Các từ solution tôi đang lỡ nhét vào câu: _________________________________
-
-### Bản chốt
+**Các từ solution cần tránh:** AI, chatbot, RAG, knowledge base, app.
 
 **Core JTBD cuối cùng:**  
-> _______________________________________________
+> Hoàn tất đúng hạn các thủ tục visa và hồ sơ nhập học bắt buộc để có thể bắt đầu học tại VinUniversity theo kế hoạch.
+
+**Tự kiểm:**
+
+- [x] Nếu bỏ tool hiện tại đi, job này vẫn còn tồn tại
+- [x] Trong câu không có tên sản phẩm, AI, chatbot, app, màn hình
+- [x] Câu mô tả điều user muốn hoàn thành, không phải thứ product đang làm
 
 ---
 
-## Bước 5 — Viết 3 `Job Stories`
-
-Nếu `core JTBD` là job ở mức cốt lõi, thì `job story` giúp bạn thấy
-**job này xuất hiện trong hoàn cảnh nào**.
-
-### Format
-
-```text
-When [trigger], I want to [motivation], so I can [outcome].
-```
-
-### Ví dụ
-
-`When inbox đổ dồn vào buổi tối, tôi muốn có câu trả lời nhất quán ngay lập tức, so I can không mất đơn vì phản hồi chậm.`
-
-### Bảng 3 job stories
+## 6. Job Stories
 
 | # | Trigger / When | Motivation / I want to | Outcome / so I can | Điều story này cho thấy |
 |---|---|---|---|---|
-| JS1 | | | | |
-| JS2 | | | | |
-| JS3 | | | | |
-
-### Tự kiểm nhanh
-
-- [ ] Mỗi story là một **tình huống thật**, không phải slogan chung chung
-- [ ] 3 story không trùng hệt nhau
-- [ ] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
+| JS1 | Khi tôi nhận thư mời nhập học nhưng chưa biết trường hợp visa của mình cần những bước nào | tôi muốn xác định đúng thủ tục, giấy tờ và deadline áp dụng cho mình | tôi có thể lập kế hoạch hoàn tất hồ sơ trước ngày nhập học | Pain bắt đầu từ việc phân loại đúng trường hợp, không chỉ từ việc thiếu thông tin |
+| JS2 | Khi hướng dẫn nằm trong nhiều email hoặc trang web và dùng thuật ngữ tôi chưa quen | tôi muốn đối chiếu yêu cầu và chuyển chúng thành một checklist có nguồn | tôi có thể chuẩn bị đủ hồ sơ mà không phải đoán hoặc làm lại | User cần tổng hợp có khả năng truy vết, không phải một câu trả lời trôi nổi |
+| JS3 | Khi hồ sơ của tôi có ngoại lệ hoặc tôi vẫn chưa chắc trước khi nộp | tôi muốn biết câu hỏi cần gửi, thông tin cần đính kèm và đúng đầu mối phụ trách | tôi có thể nhận xác nhận chính thức mà không mất nhiều vòng email | Product cần biết giới hạn và routing, không được giả vờ thay thế staff |
 
 ---
 
-## Bước 6 — Liệt kê `Current Alternatives`
+## 7. Current Alternatives
 
-Qua JTBD lens, đối thủ không chỉ là app cùng ngành.
-Đối thủ là **bất kỳ thứ gì user đang "thuê" để làm job**:
-
-- thao tác tay
-- file Excel / Google Sheets
-- intern / nhân viên
-- agency
-- ChatGPT / Claude / Gemini
-- công cụ chuyên dụng khác
-- hoặc thậm chí là **không làm gì cả**
-
-### Bảng alternatives
-
-| Alternative hiện tại | User đang thuê nó để làm gì? | Nó làm tốt gì? | Nó fail ở đâu? | Switching cost hiện tại cao hay thấp? |
+| Alternative hiện tại | User đang thuê nó để làm gì? | Nó làm tốt gì? | Nó fail ở đâu? | Switching cost hiện tại |
 |---|---|---|---|---|
-| Alt 1 | | | | |
-| Alt 2 | | | | |
-| Alt 3 | | | | |
+| Website và email chính thức của VinUni | Tra yêu cầu, biểu mẫu, deadline và đầu mối | Có thẩm quyền và có thể trích dẫn | Có thể phân tán theo kênh; sinh viên vẫn phải tự xác định nội dung nào áp dụng cho mình | Trung bình |
+| Gửi email cho phòng ban phụ trách | Xin giải đáp hoặc xác nhận cho trường hợp cụ thể | Có thể đưa ra câu trả lời chính thức và xử lý ngoại lệ | Có thể cần nhiều vòng nếu câu hỏi ban đầu thiếu ngữ cảnh; thời gian phản hồi cần được đo thay vì giả định | Trung bình |
+| Hỏi senior/bạn bè | Học kinh nghiệm thực tế và cách diễn giải dễ hiểu | Dễ tiếp cận, tạo cảm giác yên tâm | Thông tin có thể cũ hoặc không áp dụng cho quốc tịch/trường hợp khác | Thấp |
+| Công cụ dịch hoặc AI tổng quát | Dịch, tóm tắt và giải thích thuật ngữ | Nhanh, hội thoại được, dùng bất cứ lúc nào | Không biết nguồn VinUni nào mới nhất và có thể tạo câu trả lời nghe hợp lý nhưng sai | Thấp |
 
-### Kết luận nhanh
+**Nếu project biến mất hôm nay, user nhiều khả năng sẽ quay về:**
 
-**Nếu project của tôi biến mất hôm nay, user nhiều khả năng sẽ quay về:**  
-> _______________________________________________
+> Ghép thông tin từ website và email, hỏi senior, rồi gửi email cho phòng ban để xác nhận; nếu khó hiểu, họ sẽ dùng công cụ dịch hoặc AI tổng quát như một lớp hỗ trợ phụ.
 
 ---
 
-## Bước 7 — Điền `JTBD Lite Map`
-
-Đây là bản rút gọn của `job map` trong playbook.
-
-### Mục tiêu
-
-Không phải để làm consultant workshop hoàn chỉnh.  
-Mục tiêu là nhìn ra:
-
-1. workflow hiện tại của user đi qua những bước nào
-2. bước nào đang đau nhất
-3. AI có nên chen vào đó không
-
-### 8 bước tham chiếu từ playbook
-
-1. `Define`
-2. `Locate`
-3. `Prepare`
-4. `Confirm`
-5. `Execute`
-6. `Monitor`
-7. `Modify`
-8. `Conclude`
-
-> Không nhất thiết bước nào cũng quan trọng như nhau trong dự án của bạn.  
-> Nếu ít liên quan, ghi `N/A`, đừng để trống.
-
-### Bảng JTBD Lite Map
+## 8. JTBD Lite Map
 
 | Step | Trong workflow này user đang cố làm gì? | Hôm nay họ đang dùng gì? | Friction / pain hiện tại | Mức đau |
 |---|---|---|---|---|
-| Define | | | | Low / Med / High |
-| Locate | | | | Low / Med / High |
-| Prepare | | | | Low / Med / High |
-| Confirm | | | | Low / Med / High |
-| Execute | | | | Low / Med / High |
-| Monitor | | | | Low / Med / High |
-| Modify | | | | Low / Med / High |
-| Conclude | | | | Low / Med / High |
+| Define | Xác định những thủ tục nào áp dụng cho quốc tịch, tình trạng visa và kỳ nhập học của mình | Thư mời, email onboarding, website, hỏi senior | Khó phân biệt hướng dẫn chung với yêu cầu áp dụng cho trường hợp cá nhân | High |
+| Locate | Tìm phiên bản hướng dẫn, biểu mẫu và đầu mối có thẩm quyền | Website VinUni, email, Google | Nguồn có thể nằm ở nhiều nơi; khó nhận biết nội dung mới nhất | High |
+| Prepare | Lập checklist và chuẩn bị đủ giấy tờ/thông tin cần nộp | Checklist tự tạo, email cũ, mẫu từ senior | Một yêu cầu bị hiểu sai có thể kéo theo hồ sơ thiếu hoặc phải làm lại | High |
+| Confirm | Kiểm tra checklist và các ngoại lệ trước khi nộp | Đọc lại nguồn, hỏi senior, email cho staff | Khó biết khi nào có thể tự tin làm tiếp và khi nào bắt buộc phải xin xác nhận | High |
+| Execute | Điền form, gửi email hoặc nộp hồ sơ qua kênh quy định | Form, email, portal, phòng ban liên quan | Gửi sai kênh hoặc thiếu ngữ cảnh làm tăng số vòng xử lý | Med |
+| Monitor | Theo dõi trạng thái, yêu cầu bổ sung và deadline | Inbox, calendar, ghi chú cá nhân | Trạng thái phân tán; dễ bỏ sót yêu cầu mới trong email | Med |
+| Modify | Bổ sung hoặc sửa hồ sơ theo phản hồi | Email qua lại, chỉnh form/tài liệu | Có thể sửa phần biểu hiện nhưng vẫn chưa hiểu nguyên nhân bị trả lại | Med |
+| Conclude | Xác nhận mọi thủ tục bắt buộc đã hoàn tất | Email xác nhận, portal, checklist cá nhân | Thiếu một “định nghĩa hoàn tất” thống nhất khiến sinh viên vẫn lo còn bước ẩn | Med |
 
-### Chốt 2 bước đau nhất
+**Bước đau nhất #1:** Define — xác định đúng bộ yêu cầu áp dụng cho trường hợp của mình
 
-**Bước đau nhất #1:** _________________________________  
-**Bước đau nhất #2:** _________________________________
+**Bước đau nhất #2:** Confirm — kiểm tra cách hiểu và ngoại lệ trước khi nộp
 
-**Vì sao đây là nơi đáng chú ý nhất:**  
-> _______________________________________________  
-> _______________________________________________
+**Vì sao đây là nơi đáng chú ý:**
+
+> Locate là vấn đề nhìn thấy được, nhưng Define và Confirm mới là nơi rủi ro quyết định tập trung. Tìm thấy một trang chưa có nghĩa sinh viên biết trang đó có áp dụng cho mình hay không. Nếu phân loại sai trường hợp hoặc tự tin sai trước khi nộp, mọi bước sau đều phát sinh rework.
 
 ---
 
-## Bước 8 — Chỉ ra `AI Leverage Point`
-
-Sau khi map workflow, mới hỏi:
-**AI nên vào đâu, với vai trò gì, và vì sao là ở đó?**
-
-### Nhắc nhanh
-
-- Đừng nhét AI vào chỉ vì "có AI thì nghe hay"
-- Nếu pain lớn nhất không nằm ở chỗ AI giải tốt, hãy thành thật ghi ra
-- Nếu current alternative đã đủ tốt, project cần xem lại
-
-### Bảng leverage point
+## 9. AI Leverage Point
 
 | Step | AI nên giúp bằng cách nào? | Vì sao AI hợp ở đây? | Rủi ro chính nếu dùng AI |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
+| Define | Hỏi các câu làm rõ tối thiểu, đối chiếu với nguồn chính thức và chỉ ra bộ yêu cầu có khả năng áp dụng | AI phù hợp với việc hiểu câu hỏi tự nhiên, hỗ trợ đa ngôn ngữ và điều hướng qua nhiều tài liệu | Phân loại sai có thể khiến sinh viên bỏ qua thủ tục; các trường hợp không chắc chắn phải được chuyển sang staff |
+| Confirm | Chuyển các yêu cầu đã truy xuất thành checklist có citation, nêu điểm chưa chắc chắn và chuẩn bị nội dung để xin xác nhận chính thức | AI mạnh ở tóm tắt, so sánh và cấu trúc hóa thông tin thành bước hành động | Checklist tạo cảm giác chắc chắn giả nếu nguồn cũ, thiếu hoặc mâu thuẫn |
 
-### Kết luận nhanh
+**AI leverage point quan trọng nhất:**
 
-**AI leverage point quan trọng nhất của dự án tôi là:**  
-> _______________________________________________
+> Giảm sự bất định tại hai “cổng quyết định”: xác định yêu cầu nào áp dụng và kiểm tra mức độ chắc chắn trước khi nộp. Hệ thống nên đưa ra checklist có nguồn, hiển thị ngày cập nhật và chuyển đúng đầu mối khi gặp ngoại lệ.
 
 **Vì sao không phải ở bước khác:**  
-> _______________________________________________
+> Execute liên quan đến giao dịch chính thức và trách nhiệm của nhà trường; Monitor cần tích hợp trạng thái với hệ thống nguồn. Trong phạm vi MVP, AI tạo giá trị khả thi hơn ở trước hành động, nơi nó có thể giảm thời gian đọc và số vòng hỏi lại mà không tự nhận quyền phê duyệt.
 
 ---
 
-## Bước 9 — Viết `Product Hypothesis`
+## 10. Product Hypothesis
 
-Bây giờ mới đến lúc viết hypothesis.
+> Nếu chúng ta giúp sinh viên quốc tế mới nhập học xác định đúng bộ yêu cầu visa/hồ sơ áp dụng cho mình và kiểm tra checklist trước khi nộp, bằng một trợ lý đa ngôn ngữ truy xuất từ nguồn VinUni có citation và cơ chế chuyển staff khi không chắc chắn, thì họ sẽ dùng trợ lý trước khi tự dò nhiều email hoặc gửi câu hỏi thiếu ngữ cảnh, vì họ có thể chuẩn bị nhanh hơn mà vẫn truy vết được căn cứ chính thức.
 
-### Công thức gợi ý
+**Tín hiệu sớm nếu hypothesis đúng:**
 
-```text
-Nếu chúng ta giúp [job executor] làm [job / sub-job] tốt hơn ở bước [x],
-bằng cách [AI leverage],
-thì họ sẽ chuyển từ [current alternative] sang [hướng giải pháp của nhóm],
-vì [giá trị rõ nhất].
-```
-
-### Bản hypothesis của tôi
-
-> _______________________________________________  
-> _______________________________________________
-
-### Tín hiệu sớm nếu hypothesis này đúng
-
-1. _______________________________________________
-2. _______________________________________________
+1. Trong bài test theo nhiệm vụ, sinh viên hoàn thành checklist đúng và nhanh hơn cách dùng website/email hiện tại, không tăng số lỗi nghiêm trọng.
+2. Các câu hỏi cần chuyển cho staff chứa đủ thông tin ngay từ vòng đầu; số lượt trao đổi trung vị để đi đến câu trả lời chính thức giảm.
 
 ---
 
-## Bước 10 — Liệt kê `Assumptions to Validate`
-
-Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chưa phải sự thật.
-
-### 5 assumption thường đáng kiểm
-
-- Tôi đã chọn đúng `job executor`
-- Pain này thật sự đủ đau và xảy ra đủ thường xuyên
-- User sẽ đổi khỏi alternative hiện tại nếu có giải pháp tốt hơn
-- AI thực sự tạo giá trị ở step tôi chọn
-- User đủ tin kết quả AI để đưa vào workflow thật
-
-### Bảng assumptions
+## 11. Assumptions To Validate
 
 | Assumption | Vì sao assumption này rủi ro? | Tôi đang có bằng chứng gì? | Cần validate bằng cách nào tiếp theo? |
 |---|---|---|---|
-| A1 | | | |
-| A2 | | | |
-| A3 | | | |
-| A4 | | | |
-| A5 | | | |
+| A1: Sinh viên là job executor phù hợp và sẵn sàng tự phục vụ trước khi hỏi staff | Nếu họ luôn muốn staff xử lý trực tiếp, một lớp self-service sẽ ít được dùng | Hiện mới có logic từ cấu trúc workflow, chưa có bằng chứng người dùng trực tiếp | Phỏng vấn 5–7 sinh viên quốc tế gần đây; dựng timeline cho một thủ tục thật và ghi lại điểm họ tìm trợ giúp |
+| A2: Define/Confirm là hai pain lớn nhất | Pain thực tế có thể nằm ở việc xin giấy tờ bên ngoài VinUni hoặc thời gian cơ quan nhà nước xử lý — nơi sản phẩm không can thiệp được | Chưa có dữ liệu định lượng; đây là suy luận từ hậu quả của việc hiểu sai | Quan sát 5 task thực tế, mã hóa thời gian chờ, rework và số lần chuyển kênh theo từng bước job map |
+| A3: Nguồn VinUni đủ đầy, nhất quán và có owner cập nhật | RAG không thể bù cho nguồn thiếu hoặc mâu thuẫn; thông tin sai về visa/deadline có hậu quả cao | Nhóm mới có hướng xây knowledge base, chưa có audit về coverage/freshness | Lập source inventory, owner và SLA cập nhật; tạo bộ câu hỏi vàng được staff duyệt để regression test |
+| A4: Trợ lý tốt hơn workflow website/email hiện tại | Nếu người dùng đã tìm được câu trả lời đủ nhanh, chatbot chỉ thêm một lớp giao diện | Chưa có baseline về thời gian hoàn thành, tỷ lệ đúng hoặc số vòng email | A/B task test với 8–10 người: current workflow so với prototype; đo thời gian, độ chính xác và nhu cầu escalation |
+| A5: Citation và escalation tạo đủ niềm tin để hành động | Người dùng có thể hoặc tin mù quáng, hoặc bỏ qua công cụ và vẫn hỏi staff mọi lần | Chưa có bằng chứng hành vi; mới là giả thuyết thiết kế | Test ba mức trình bày nguồn/độ chắc chắn; đo khả năng chọn đúng lúc tự làm và đúng lúc hỏi staff |
 
-### Assumption nguy hiểm nhất nếu tôi đang sai
+**Assumption nguy hiểm nhất nếu tôi đang sai:**
 
-> _______________________________________________
+> Nguồn VinUni có đủ đầy, nhất quán và có người chịu trách nhiệm cập nhật hay không. Nếu lớp dữ liệu nền không đáng tin, AI chỉ làm thông tin sai lan nhanh và thuyết phục hơn.
 
 ---
 
-## Bước 11 — Share trong bàn (3')
-
-### Mỗi người / mỗi nhóm chỉ nói 4 thứ
-
-1. **Job executor của bạn là ai**
-2. **Core JTBD của bạn là gì**
-3. **Step đau nhất đang nằm ở đâu**
-4. **AI leverage point + assumption rủi ro nhất là gì**
-
-### Nếu chưa biết hỏi ngược gì, dùng 4 câu này
-
-1. **"Câu JTBD này có đang lỡ nhét solution vào không?"**
-2. **"Alternative hiện tại của user là gì, và tại sao họ chưa bỏ nó?"**
-3. **"Pain mạnh nhất nằm ở bước nào trong workflow, có chắc AI giải tốt được không?"**
-4. **"Assumption nào nếu sai thì cả hypothesis sẽ sập?"**
-
-### Ghi nhanh sau khi nghe bàn phản biện
+## 12. Share Trong Bàn Và Version Cuối
 
 | Ý phản biện tôi nghe được | Nó chạm vào phần nào? | Tôi sẽ giữ / sửa gì? |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Chatbot không nên tự quyết các trường hợp visa nhạy cảm | AI leverage point / risk | Thêm ngưỡng độ chắc chắn và escalation bắt buộc; AI không xác nhận thay staff |
+| User không chỉ cần câu trả lời nhanh mà cần biết căn cứ nào đáng tin | Product hypothesis | Yêu cầu citation, ngày cập nhật và owner của nguồn ngay trong trải nghiệm |
+| Nhu cầu tập trung mạnh ở một giai đoạn ngắn | Project slice / assumptions | Giữ lát cắt hẹp để kiểm chứng giá trị trước; chưa mở rộng sang học tập/đời sống khi chưa có bằng chứng |
 
----
+**Sau phản biện, tôi thay đổi gì:**
 
-## Bước 12 — Chốt version cuối sau thảo luận
+- [x] Giữ nguyên job executor
+- [x] Giữ nguyên core JTBD
+- [x] Sửa AI leverage point
+- [x] Sửa product hypothesis
 
-### Sau khi nghe phản biện, tôi thay đổi gì?
+**Vì sao tôi giữ / sửa:**
 
-- [ ] Giữ nguyên `job executor`
-- [ ] Sửa `job executor`
-- [ ] Giữ nguyên `core JTBD`
-- [ ] Sửa `core JTBD`
-- [ ] Giữ nguyên `AI leverage point`
-- [ ] Sửa `AI leverage point`
-- [ ] Giữ nguyên `product hypothesis`
-- [ ] Sửa `product hypothesis`
-
-### Vì sao tôi giữ / sửa?
-
-> _______________________________________________  
-> _______________________________________________
+> Tôi giữ job executor và Core JTBD vì người trực tiếp chịu trách nhiệm hoàn tất thủ tục vẫn là sinh viên. Tôi sửa leverage point và hypothesis để bỏ hàm ý “chatbot biết mọi thứ”: AI chỉ cấu trúc hóa thông tin có nguồn, biểu đạt mức độ chắc chắn và chuyển trường hợp ngoại lệ cho staff.
 
 ### Version cuối cùng tôi nộp
 
 **Job executor:**  
-> _______________________________________________
+> Sinh viên quốc tế đã nhận thư mời nhập học và đang chuẩn bị bắt đầu học kỳ tại VinUniversity.
 
 **Core JTBD:**  
-> _______________________________________________
+> Hoàn tất đúng hạn các thủ tục visa và hồ sơ nhập học bắt buộc để có thể bắt đầu học tại VinUniversity theo kế hoạch.
 
 **2 bước đau nhất trong workflow:**  
-> _______________________________________________
+> Define — xác định đúng bộ yêu cầu áp dụng; Confirm — kiểm tra cách hiểu và ngoại lệ trước khi nộp.
 
 **AI leverage point chính:**  
-> _______________________________________________
+> Trợ lý đa ngôn ngữ tạo checklist có citation từ nguồn VinUni, nêu điểm chưa chắc chắn và chuyển đúng đầu mối khi trường hợp cần xác nhận chính thức.
 
 **Product hypothesis:**  
-> _______________________________________________
+> Nếu chúng ta giúp sinh viên quốc tế mới nhập học xác định đúng bộ yêu cầu visa/hồ sơ áp dụng cho mình và kiểm tra checklist trước khi nộp, bằng một trợ lý đa ngôn ngữ truy xuất nguồn VinUni có citation và escalation, thì họ sẽ dùng trợ lý trước khi tự dò nhiều email hoặc gửi câu hỏi thiếu ngữ cảnh, vì họ chuẩn bị nhanh hơn mà vẫn truy vết được căn cứ chính thức.
 
 **Assumption cần validate đầu tiên:**  
-> _______________________________________________
+> Nguồn VinUni có đủ đầy, nhất quán và có owner cập nhật để hệ thống tạo hướng dẫn an toàn hay không.
 
 ---
 
-## Checklist trước khi nộp
+## Checklist Trước Khi Nộp
 
-- [ ] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
-- [ ] Tôi đã phân biệt được `job executor` với buyer / influencer.
-- [ ] `Core JTBD` của tôi không nhét solution vào câu.
-- [ ] Tôi đã viết đủ 3 `job stories`.
-- [ ] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
-- [ ] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
-- [ ] Tôi đã ghi rõ `assumptions to validate`.
-- [ ] Tôi đã sửa version cuối sau khi share trong bàn.
-
----
-
-## Nếu còn thời gian / làm về nhà
-
-- Phỏng vấn nhanh 1 người dùng thật để kiểm xem `job story` nào là sát nhất.
-- So sánh `current alternatives` với project của nhóm theo 3 tiêu chí: nhanh hơn, rẻ hơn, tin hơn.
-- Tự hỏi lại một câu khó: **nếu không dùng AI, project này còn tạo giá trị không?**
-- Nếu câu trả lời là "không", hãy xem lại liệu nhóm đang giải **job thật** hay chỉ đang tìm chỗ để nhét AI.
+- [x] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
+- [x] Tôi đã phân biệt được job executor với buyer / influencer.
+- [x] Core JTBD của tôi không nhét solution vào câu.
+- [x] Tôi đã viết đủ 3 job stories.
+- [x] Tôi đã điền JTBD lite map và khoanh ra 2 bước đau nhất.
+- [x] Tôi đã chỉ ra AI leverage point thay vì nhảy thẳng vào feature list.
+- [x] Tôi đã ghi rõ assumptions to validate.
+- [x] Tôi đã sửa version cuối sau khi share trong bàn.

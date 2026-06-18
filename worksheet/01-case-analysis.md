@@ -1,138 +1,44 @@
----
-artifact: 01 — Case Analysis
-bai-tap: Lab 1 — Phân tích "tử huyệt" chiến lược
-format: Cá nhân trước → share trong bàn → chốt verdict cuối
-time: 20 phút trên lớp
-nop-cuoi: Có — đây là file nộp cuối của Lab 1
----
+# Lab 1 — Case Analysis
 
-# Lab 1 — Case Analysis / Phân tích "tử huyệt" chiến lược
+**Case đã chọn:** Stack Overflow
 
-**Case đã chọn:** _______________  
-**Người làm:** _______________  
-**Bàn / nhóm bàn:** _______________  
-**Ngày:** ____________
+**Người làm:** Đỗ Thị Thanh Bình
 
-> Đây là **file duy nhất** của Lab 1.  
-> File này đồng thời đóng vai trò:
->
-> - guide từng bước,
-> - worksheet để điền trực tiếp,
-> - và file nộp cuối cho người chấm.
+**Bàn / nhóm bàn:** C6 - E402
 
-Mục tiêu của bài này không phải kể lại "AI đã giết một công ty". Mục tiêu là chỉ ra, bằng bằng chứng thật:
-
-1. **vì sao case đó bị tổn thương trước AI**
-2. **điều gì đã thay đổi vĩnh viễn**
-3. **và nếu rút một cảnh báo cho dự án của nhóm mình thì đó là gì**
-
-Quy tắc xuyên suốt: **không có bằng chứng = không có nhận định.**
+**Ngày:** 18/06/2026
 
 ---
 
-## Đầu ra bắt buộc
+## Bước 0 — Chọn case
 
-Người chấm cần thấy đủ 4 phần trong chính file này:
-
-1. **3-5 bằng chứng chốt**
-2. **4 nhận định bắt buộc**
-3. **ghi chú sau khi share trong bàn**
-4. **verdict cuối của cá nhân**
-
-Nếu thiếu một trong bốn phần trên, bài sẽ bị xem là chưa hoàn chỉnh.
-
----
-
-## Cách làm trong lớp (20 phút)
-
-```text
-2'  Chọn case
-8'  Làm cá nhân: gom bằng chứng + viết 4 nhận định
-7'  Share trong bàn: 90 giây / người + hỏi vặn lại
-3'  Tự sửa verdict cá nhân sau thảo luận
-```
-
----
-
-## Bước 0 — Chọn case thật nhanh
-
-Mặc định: **bạn tự chọn case của mình**.
-
-### Một case phù hợp cần có 4 điều
-
-- [ ] Có một **AI shock** hoặc mốc đổi cục diện đủ rõ
-- [ ] Có thể tìm được ít nhất **3-5 bằng chứng công khai**
-- [ ] Có tác động đủ nhìn thấy được ở user / doanh thu / pricing / traffic / cổ phiếu / usage / vị thế cạnh tranh
-- [ ] Có thể trả lời câu hỏi: **"Điều gì đã thay đổi vĩnh viễn?"**
-
-### Điền nhanh trước khi làm
-
-- **Case / sản phẩm / công ty:** ___________________________________
-- **AI / platform / sản phẩm mới tạo áp lực:** ___________________________________
+- **Case / sản phẩm / công ty:** Stack Overflow
+- **AI / platform / sản phẩm mới tạo áp lực:** ChatGPT, GitHub Copilot và các AI coding assistant
 - **Vì sao tôi chọn case này?**  
-  > ___________________________________
-
-### Nếu bí case, chọn 1 trong 6 case gợi ý này
-
-| Case | Vì sao đáng phân tích | Một tín hiệu đáng chú ý |
-|---|---|---|
-| Chegg | entry point học tập đổi rất nhanh | 7,8M → 3,2M thuê bao |
-| Stack Overflow | hiệu ứng mạng bị đảo chiều | câu hỏi mới giảm mạnh sau ChatGPT |
-| Jasper | lớp vỏ dễ bị generic AI ép | định giá và tăng trưởng chậm lại sau ChatGPT |
-| Tome | AI phổ thông "đủ tốt" làm phân khúc cũ yếu đi | nhiều đợt cắt giảm và pivot |
-| Inflection / Pi | chatbot tiêu dùng bị ông lớn lấn át | đội ngũ chuyển sang Microsoft |
-| Figma / Claude Design | rủi ro "đất thuê" khi platform bước xuống app layer | cổ phiếu Figma phản ứng tiêu cực khi Claude Design ra mắt |
-
-> Nếu có case riêng rõ hơn, dùng case riêng.
+  > Tôi chọn Stack Overflow vì case này cho thấy AI không chỉ tạo thêm một đối thủ, mà còn thay đổi điểm bắt đầu của cả workflow tìm trợ giúp kỹ thuật. Thay vì tìm kiếm, mở nhiều trang và tự ghép câu trả lời, developer có thể hỏi AI ngay trong chat hoặc IDE, bổ sung ngữ cảnh code và tiếp tục đối thoại cho đến khi có hướng xử lý.
 
 ---
 
-## Bước 1 — Gom 3-5 bằng chứng chốt
-
-Không cần chép lại mọi số. Chỉ giữ những bằng chứng đủ mạnh để đỡ toàn bộ lập luận của bạn.
-
-### Tìm bằng chứng theo 4 cụm
-
-1. **Case trước AI**
-   Sản phẩm là gì, user là ai, họ trả tiền cho cái gì, case từng thắng nhờ gì.
-
-2. **AI shock**
-   Mốc Big Tech AI / platform AI / sản phẩm mới xuất hiện và đổi luật chơi.
-
-3. **Tác động quan sát được**
-   User, doanh thu, ARR, pricing, traffic, usage, cổ phiếu, sa thải, pivot.
-
-4. **Cục diện mới của thị trường**
-   Ai phản ứng tốt hơn, ai thay thế tốt hơn, entry point mới nằm ở đâu, phân khúc còn sống không.
-
-### Ưu tiên nguồn thế nào?
-
-| Mức ưu tiên | Loại nguồn | Ví dụ |
-|---|---|---|
-| 1 | Nguồn gốc | báo cáo tài chính, investor relations, pricing page, blog chính thức |
-| 2 | Báo uy tín | Reuters, CNBC, Bloomberg, FT, TechCrunch |
-| 3 | Dữ liệu công khai / tổng hợp | MacroTrends, Similarweb, Stack Overflow Survey, Sacra |
-
-### Bảng bằng chứng chốt
+## Bước 1 — Gom 3–5 bằng chứng chốt
 
 | # | Bằng chứng / số liệu chốt | Vì sao số này quan trọng? | Nguồn |
 |---|---|---|---|
-| E1 | | | |
-| E2 | | | |
-| E3 | | | |
-| E4 | | | |
-| E5 | | | |
+| E1 | Khi công bố OverflowAI vào tháng 7/2023, Stack Overflow cho biết kho tri thức của mình có hơn **58 triệu câu hỏi và câu trả lời**, kèm các tín hiệu kiểm chứng như vote, edit và comment. | Quy mô dữ liệu và cơ chế kiểm chứng cộng đồng là moat cốt lõi trước AI, đồng thời là tài sản Stack Overflow còn có thể tái sử dụng trong thời kỳ AI. | [Stack Overflow Blog — Announcing OverflowAI](https://stackoverflow.blog/2023/07/27/announcing-overflowai/) |
+| E2 | Một nghiên cứu dùng mô hình difference-in-differences ước tính việc ChatGPT xuất hiện làm số bài đăng hằng tuần trên Stack Overflow giảm **16%**; mức giảm tăng dần theo thời gian. | Đây là bằng chứng định lượng trực tiếp cho thấy AI đã thay thế một phần hành vi hỏi đáp công khai, không chỉ tạo ra “tiếng ồn” cạnh tranh. | [del Rio-Chanona, Laurentsyeva & Wachs (2023)](https://arxiv.org/abs/2307.07367) |
+| E3 | Developer Survey 2024 ghi nhận **76%** người trả lời đang dùng hoặc dự định dùng AI trong quy trình phát triển; riêng “tìm câu trả lời” và “debug/nhận trợ giúp” lần lượt là hai use case được **67,5%** và **56,7%** người đang dùng AI lựa chọn. | AI đang đi thẳng vào chính job mà Stack Overflow từng phục vụ: tìm đáp án và gỡ lỗi. | [Stack Overflow Developer Survey 2024 — AI](https://survey.stackoverflow.co/2024/ai) |
+| E4 | Developer Survey 2025 ghi nhận tỷ lệ dùng hoặc dự định dùng AI tăng lên **84%**; **51%** professional developer dùng AI hằng ngày. | AI đã trở thành một phần thường nhật của workflow, nên việc quay lại entry point cũ không còn là mặc định. | [Stack Overflow Developer Survey 2025 — AI](https://survey.stackoverflow.co/2025/ai) |
+| E5 | Năm 2025, **46%** người trả lời chủ động không tin độ chính xác của AI, cao hơn tỷ lệ tin (**33%**). Trước đó Stack Overflow đã định vị OverflowAI quanh câu trả lời có nguồn, attribution, dữ liệu cộng đồng và tích hợp IDE/Teams. | AI chiếm entry point nhưng chưa giải quyết được bài toán niềm tin; đây là khoảng trống chiến lược Stack Overflow có quyền thắng nếu bảo vệ được chất lượng dữ liệu và cộng đồng. | [Developer Survey 2025](https://survey.stackoverflow.co/2025/ai); [OverflowAI announcement](https://stackoverflow.blog/2023/07/27/announcing-overflowai/) |
 
 ### 3 phát hiện ban đầu
 
-Trước khi viết nhận định, ghi nhanh 3 dòng:
-
 1. **Case này từng thắng nhờ...**  
-   > ___________________________________
+   > Stack Overflow từng thắng nhờ kho tri thức công khai có quy mô lớn, được cộng đồng liên tục hỏi, trả lời, vote và chỉnh sửa. SEO đưa developer đến đúng trang; cơ chế reputation và kiểm duyệt giúp họ đánh giá câu trả lời nào đáng tin.
+
 2. **AI shock làm thay đổi...**  
-   > ___________________________________
+   > AI shock chuyển điểm bắt đầu từ “tìm và đọc câu trả lời đã có” sang “mô tả vấn đề của tôi và nhận một câu trả lời được tổng hợp theo ngữ cảnh”.
+
 3. **Dấu hiệu mạnh nhất cho thấy luật chơi mới là...**  
-   > ___________________________________
+   > Hoạt động đăng bài giảm sau ChatGPT đúng lúc AI được dùng ngày càng nhiều cho search và debugging; Stack Overflow cũng phải đưa trải nghiệm hội thoại vào IDE và sản phẩm doanh nghiệp.
 
 ---
 
@@ -140,179 +46,105 @@ Trước khi viết nhận định, ghi nhanh 3 dòng:
 
 ### Nhận định 1 — Trước AI, case này thắng nhờ giả định gì?
 
-Gợi ý:
-
-- Người dùng thuê sản phẩm này để làm gì?
-- Giá trị lõi trước AI là gì?
-- Họ thắng nhờ workflow, switching cost, brand, distribution, data hay một giả định hành vi nào?
-- Job-to-be-done (công việc người dùng "thuê" sản phẩm làm hộ) là gì?
-
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> Trước AI, Stack Overflow thắng nhờ giả định rằng khi gặp một vấn đề kỹ thuật, developer sẵn sàng chuyển khỏi môi trường code để tìm một câu trả lời công khai đã có. Stack Overflow được “thuê” để rút ngắn thời gian gỡ lỗi: SEO giúp tìm thấy câu hỏi tương tự, còn vote, edit, comment và reputation giúp sàng lọc độ tin cậy. Mỗi tương tác mới lại làm kho tri thức tốt hơn, tạo thành network effect giữa người hỏi, người trả lời và người đọc.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E1
 
 ---
 
 ### Nhận định 2 — Kỳ vọng người dùng và luật chơi cạnh tranh đã đổi ở đâu?
 
-#### Nhắc nhanh 7 Dịch chuyển Kỳ vọng
+**Shift kỳ vọng quan trọng nhất:** Phản hồi ngay và thấu hiểu ngữ cảnh
 
-1. Làm xong giúp tôi
-2. May đo cho tôi
-3. Tự lo việc lặt vặt
-4. Trả theo kết quả
-5. Phản hồi ngay
-6. Giao diện tự thay đổi
-7. Thấu hiểu ngữ cảnh
-
-#### Nhắc nhanh 5 Competitive Dynamics
-
-- switching costs giảm
-- data advantages tăng
-- platform risk
-- build-copy cycles tăng tốc
-- GTM + distribution quan trọng hơn
-
-**Shift kỳ vọng quan trọng nhất:** ___________________________________  
-**Competitive dynamic quan trọng nhất:** ___________________________________
+**Competitive dynamic quan trọng nhất:** Switching costs giảm
 
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> Kỳ vọng đã chuyển từ “đưa tôi đến một câu trả lời có sẵn” sang “hiểu trường hợp của tôi và giúp tôi tiến thêm một bước ngay bây giờ”. AI cho phép hỏi tiếp, đưa thêm code, yêu cầu giải thích hoặc tạo bản sửa ngay trong cùng phiên làm việc. Vì vậy, switching cost gần như biến mất: developer không cần rời IDE, chọn từ khóa, mở nhiều trang rồi tự chuyển kiến thức chung thành lời giải cho code của mình.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E2, E3, E4
 
 ---
 
 ### Nhận định 3 — Giả định nào không còn đúng nữa? Điều gì đã thay đổi vĩnh viễn?
 
-Gợi ý:
-
-- Switching cost cũ có từng giữ user ở lại không? Vì sao giờ không còn đủ?
-- Entry point cũ của sản phẩm có còn tồn tại không, hay người dùng đã chuyển sang một điểm bắt đầu mới?
-- Workflow cũ có còn được chấp nhận không, hay chuẩn mới là "làm xong giúp tôi / ngay trong nơi tôi đang làm việc"?
-- "Thay đổi vĩnh viễn" không phải là giá cổ phiếu giảm; nó là **chuẩn mới trong đầu người dùng** hoặc **luật chơi mới của thị trường**.
-- Phân khúc này còn tồn tại không? Nếu còn, nó đang được phục vụ theo cách khác ra sao?
-
 **Điều đã thay đổi vĩnh viễn theo tôi là:**  
-> _______________________________________________  
-> _______________________________________________
+> Giả định “developer phải tự tìm một câu hỏi tương tự trong kho Q&A” không còn đúng. Thay đổi vĩnh viễn không phải là một đợt giảm traffic, mà là chuẩn trải nghiệm mới: trợ giúp phải hội thoại được, nhận ngữ cảnh riêng và nằm gần nơi công việc đang diễn ra. Stack Overflow vẫn có giá trị như nguồn kiểm chứng, nhưng không còn mặc nhiên sở hữu điểm bắt đầu của hành trình tìm trợ giúp.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E2, E4, E5
 
 ---
 
 ### Nhận định 4 — Case này còn cứu được không? Nếu có, phải đổi bằng cách nào?
 
-Gợi ý:
-
-- Nếu cứu được: họ phải đổi ở moat nào, workflow nào, distribution nào?
-- Nếu không cứu được: vì sao đã quá muộn?
-- So với một đối thủ phản ứng tốt hơn, họ chậm ở đâu?
-
-**Verdict ban đầu của tôi:** Có / Không / Có nhưng phải đổi rất mạnh
+**Verdict ban đầu của tôi:** Có nhưng phải đổi rất mạnh
 
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> Stack Overflow còn cứu được, nhưng không bằng cách cố giành lại mọi câu hỏi đơn giản. Công ty nên chuyển từ “đích đến của web search” thành lớp tri thức có kiểm chứng cho developer và AI: nội dung có attribution, tín hiệu chất lượng cộng đồng, dữ liệu được cấp phép, và trải nghiệm xuất hiện trong IDE hoặc knowledge workflow của doanh nghiệp. Điều kiện sống còn là bảo vệ vòng lặp đóng góp công khai; nếu chỉ để AI khai thác kho cũ mà không tạo động lực sinh ra tri thức mới, moat dữ liệu sẽ hao mòn theo thời gian.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E1, E5
 
 ---
 
 ## Tóm tắt cá nhân trước khi share trong bàn
 
-Viết đúng 3 câu:
-
-1. `Case này yếu đi vì...`
-2. `Điều thay đổi vĩnh viễn là...`
-3. `Verdict của tôi là...`
-
 **Bản tóm tắt 3 câu của tôi:**  
-1. _______________________________________________  
-2. _______________________________________________  
-3. _______________________________________________
+1. Stack Overflow yếu đi vì AI xử lý ngay nhiều câu hỏi phổ biến mà trước đây developer phải tìm hoặc đăng công khai.
+2. Điều thay đổi vĩnh viễn là entry point chuyển từ web search/Q&A sang trợ lý hội thoại có ngữ cảnh.
+3. Stack Overflow còn cứu được nếu biến niềm tin và dữ liệu cộng đồng thành lớp kiểm chứng cho AI, đồng thời duy trì được vòng lặp tạo tri thức mới.
 
 ---
 
-## Bước 3 — Share trong bàn (7')
-
-### Mỗi người chỉ nói 4 thứ trong 90 giây
-
-1. **Case bạn chọn là gì**
-2. **Bằng chứng mạnh nhất bạn có là gì**
-3. **Điều gì đã thay đổi vĩnh viễn**
-4. **Verdict của bạn**
-
-### Nếu chưa biết hỏi ngược gì, dùng 4 câu này
-
-1. **"Bằng chứng mạnh nhất cho nhận định đó là gì?"**
-2. **"Điều gì ở đây là triệu chứng, còn điều gì là thay đổi vĩnh viễn?"**
-3. **"Nếu switching cost từng cao, vì sao người dùng vẫn rời đi?"**
-4. **"Platform mới hoặc đối thủ mới đã chiếm entry point ở đâu?"**
+## Bước 3 — Share trong bàn
 
 ### Ghi nhanh khi nghe các bạn cùng bàn
 
 | Người | Case | Bằng chứng mạnh nhất họ nêu | Điều họ cho là "thay đổi vĩnh viễn" | Verdict của họ |
 |---|---|---|---|---|
-| Bạn 1 | | | | |
-| Bạn 2 | | | | |
-| Bạn 3 | | | | |
-| Bạn 4 | | | | |
+| Bạn 1 | Chegg | ChatGPT và các AI học tập có thể trả lời bài tập trực tiếp, giải thích từng bước và cá nhân hóa theo câu hỏi của học sinh | Học sinh không còn mặc định đi tìm đáp án trên nền tảng Q&A/học liệu trả phí; họ kỳ vọng có tutor AI trả lời ngay, giải thích lại được và đi theo ngữ cảnh bài của mình | Tổn thương mạnh; muốn cứu phải chuyển từ "kho lời giải" sang tutor/coach học tập có kiểm chứng, giúp hiểu bài thay vì chỉ đưa đáp án |
+| Bạn 2 | Stack Overflow | Số bài đăng giảm sau ChatGPT, nhưng developer vẫn cần nguồn tri thức đáng tin và hỗ trợ cho lỗi phức tạp mà AI tổng quát dễ hallucinate | Entry point đã chuyển sang AI assistant, nhưng nhu cầu debug sâu vẫn còn: developer cần một agent hiểu codebase, chạy kiểm tra, truy vết lỗi và dựa trên nguồn đáng tin | Còn cứu vãn được nếu Stack Overflow không chỉ làm Q&A/search AI, mà tích hợp AI agent debug sâu vào IDE/workflow và dùng dữ liệu cộng đồng để tăng độ tin cậy |
 
 ### Sau khi cả bàn share xong, chốt 3 ý chung
 
 **1. Bàn tôi thấy case nào có bằng chứng mạnh nhất? Vì sao?**  
-> _______________________________________________
+> Bàn tôi thấy Stack Overflow có chuỗi bằng chứng chặt hơn vì nối được ba lớp: tác động quan sát được (bài đăng giảm), thay đổi hành vi (AI đi vào search/debugging) và phản ứng chiến lược của công ty (OverflowAI). Chuỗi này giúp phân biệt một cú giảm ngắn hạn với thay đổi cấu trúc trong entry point.
 
 **2. Có pattern nào lặp lại giữa nhiều case không?**  
-Ví dụ: switching costs giảm, platform bước xuống app layer, user chuyển sang "làm xong giúp tôi", moat cũ quá mỏng…  
-> _______________________________________________
+> Pattern lặp lại là AI chiếm entry point bằng trải nghiệm tức thì và có ngữ cảnh. Vì vậy, kho nội dung đơn thuần không còn đủ mạnh; sản phẩm phải biến nội dung thành hành động trong workflow, đồng thời chứng minh độ tin cậy mà AI tổng quát còn thiếu.
 
 **3. Một cảnh báo cho chính dự án của nhóm tôi là gì?**  
-> _______________________________________________
+> Nếu dự án chỉ bọc một chatbot quanh nội dung sẵn có, AI tổng quát có thể thay thế dễ dàng. Dự án cần sở hữu một lợi thế khó sao chép hơn: nguồn dữ liệu được quản trị, hiểu workflow cụ thể, tạo ra bước hành động rõ ràng và biết chuyển sang con người khi rủi ro vượt quá khả năng của AI.
 
 ---
 
-## Bước 4 — Chốt lại verdict cá nhân sau thảo luận (3')
+## Bước 4 — Chốt lại verdict cá nhân sau thảo luận
 
 ### Sau khi nghe bàn phản biện, verdict của tôi:
 
 - [ ] Giữ nguyên
-- [ ] Đổi nhẹ
+- [x] Đổi nhẹ
 - [ ] Đổi mạnh
 
 ### Vì sao tôi giữ / đổi verdict?
 
-> _______________________________________________  
-> _______________________________________________
+> Tôi đổi nhẹ verdict: cơ hội không chỉ nằm ở việc cấp dữ liệu cho AI, mà ở việc đưa lớp tri thức đáng tin trở lại đúng workflow của developer. Tuy nhiên, “AI agent debug sâu” chỉ là một hướng sản phẩm cần kiểm chứng; lợi thế bền vững hơn vẫn là nguồn tri thức có attribution, tín hiệu chất lượng và cộng đồng bổ sung những khoảng trống mà AI chưa giải được.
 
-### Verdict cuối cùng của tôi (phiên bản nộp)
+### Verdict cuối cùng của tôi
 
 **Case này tổn thương trước AI vì:**  
-> _______________________________________________
+> Stack Overflow phụ thuộc vào thói quen developer rời workflow để tìm hoặc đăng một câu hỏi công khai. AI assistant trả lời nhanh, hội thoại được và dùng ngữ cảnh riêng, nên nhiều câu hỏi phổ biến không còn đi qua nền tảng.
 
 **Điều thay đổi vĩnh viễn là:**  
-> _______________________________________________
+> Entry point đã chuyển từ “search rồi đọc Q&A” sang “hỏi AI trong ngữ cảnh của mình”. Người dùng khó chấp nhận quay lại trải nghiệm chậm và rời rạc hơn, dù họ vẫn cần nguồn kiểm chứng khi vấn đề phức tạp hoặc rủi ro cao.
 
 **Nếu phải rút 1 bài học cho dự án của nhóm mình, tôi rút ra:**  
-> _______________________________________________
+> Đừng xem kho thông tin hay giao diện chatbot là moat. Sản phẩm phải thắng ở một workflow cụ thể: hiểu ngữ cảnh, đưa người dùng đến hành động tiếp theo, chỉ rõ nguồn và chuyển sang con người khi AI không đủ chắc chắn.
 
 ---
 
 ## Checklist trước khi nộp
 
-- [ ] Tôi đã chọn ít nhất 3 bằng chứng chốt có nguồn.
-- [ ] Mỗi nhận định đều chỉ vào ít nhất 1 bằng chứng.
-- [ ] Tôi đã ghi lại phần share trong bàn.
-- [ ] Tôi đã viết verdict cuối sau thảo luận.
-
----
-
-## Nếu còn thời gian / làm về nhà
-
-- Bổ sung thêm một case "đối thủ phản ứng tốt hơn" để so.
-- Thêm một đoạn ngắn: **nếu tôi là PM của case này trong 6 tháng đầu sau AI shock, tôi sẽ làm gì đầu tiên?**
-- Kiểm lại xem case này yếu vì expectation shift, competitive dynamics, hay cả hai cùng lúc.
+- [x] Tôi đã chọn ít nhất 3 bằng chứng chốt có nguồn.
+- [x] Mỗi nhận định đều chỉ vào ít nhất 1 bằng chứng.
+- [x] Tôi đã ghi lại phần share trong bàn.
+- [x] Tôi đã viết verdict cuối sau thảo luận.
